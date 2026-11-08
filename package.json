@@ -1,0 +1,12 @@
+{
+  "name": "sittermatch-server",
+  "version": "1.0.0",
+  "description": "Server API for SitterMatch",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
