@@ -25,12 +25,10 @@ const parents = [
   }
 ];
 
-// נתיב 1: החזרת כל ההורים
 router.get('/', (req, res) => {
   res.json(parents);
 });
 
-// נתיב 2: החזרת הורים לפעוטות (ילדים מתחת לגיל 5)
 router.get('/toddlers', (req, res) => {
   const parentsWithToddlers = parents.filter(p => p.childrenAges.some(age => age < 5));
   res.json(parentsWithToddlers);
